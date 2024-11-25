@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    text-align: right;
+    background-color: #f4f4f9;
+}
+#b{ text-align: center;}
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.introduction {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #e6e6ff;
+    border-radius: 8px;
+}
+
+.planets {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.planet {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+}
+
+.planet img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.planet h3 {
+    margin: 10px 0;
+    color: #333;
+}
+@media (max-width: 767px) {
+    body {
+      background-color: #1787ea; /* Fond bleu clair pour petits écrans */
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    body {
+      background-color: #17b8e0; /* Fond beige clair pour les tablettes */
+    }
+  }
+  @media (min-width: 1024px) {
+    body {
+      background-color: #722bb4; /* Fond gris clair pour grands écrans */
+    }
+  }
